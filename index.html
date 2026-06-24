@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gorla Jyothiswar Reddy - B.Tech CSE student specializing in Python, Machine Learning, and Computer Vision. View projects, skills, and academic achievements.">
+    <meta name="keywords" content="Gorla Jyothiswar Reddy, Portfolio, Machine Learning, Computer Vision, Python Developer, B.Tech CSE, Madanapalle Institute of Technology and Science">
+    <meta name="author" content="Gorla Jyothiswar Reddy">
+    <title>Gorla Jyothiswar Reddy | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">G</span>JR
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my portfolio</span>
+                    <h1 class="hero-title">
+                        I'm <span class="name-gradient">Gorla Jyothiswar Reddy</span>
+                    </h1>
+                    <p class="hero-tagline">B.Tech Computer Science & Engineering Student</p>
+                    <p class="hero-description">
+                        Passionate developer with hands-on experience building solutions in <strong>Machine Learning</strong>, <strong>Computer Vision</strong>, and <strong>Python</strong>. Eager to solve real-world challenges through technology.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-github" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-linkedin" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:jyothisgjyothiswarreddy@gmail.com" class="social-icon" id="hero-social-email" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="tel:+919000031870" class="social-icon" id="hero-social-phone" aria-label="Phone">
+                            <i data-lucide="phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="card-title-text">developer.py</span>
+                        </div>
+                        <div class="card-body-code">
+                            <pre><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="method">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Gorla Jyothiswar Reddy"</span>
+        <span class="param">self</span>.role = <span class="string">"B.Tech CSE Student"</span>
+        <span class="param">self</span>.focus = [<span class="string">"ML"</span>, <span class="string">"CV"</span>, <span class="string">"Python"</span>]
+
+    <span class="keyword">def</span> <span class="method">get_status</span>(<span class="param">self</span>):
+        <span class="keyword">return</span> <span class="string">"Always learning and building"</span>
+
+<span class="comment"># Instantiating the future</span>
+jyothiswar = Developer()
+print(jyothiswar.get_status())</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info-card">
+                        <div class="profile-avatar">
+                            <span class="avatar-text">GJR</span>
+                        </div>
+                        <div class="profile-details">
+                            <h3>Gorla Jyothiswar Reddy</h3>
+                            <p class="profile-title">CSE Student & Developer</p>
+                            <div class="profile-meta">
+                                <div class="meta-item">
+                                    <i data-lucide="map-pin"></i>
+                                    <span>Andhra Pradesh, India</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i data-lucide="graduation-cap"></i>
+                                    <span>B.Tech CSE (2023 - 2027)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text-content">
+                        <h3 class="about-heading">Blending Coding with Cognitive Systems</h3>
+                        <p class="about-p">
+                            I am a motivated B.Tech Computer Science & Engineering student with a deep interest in artificial intelligence, machine learning, and computer vision. I am skilled in developing innovative projects and eager to apply my technical and analytical knowledge to solve real-world problems.
+                        </p>
+                        <p class="about-p">
+                            My approach combines solid software engineering fundamentals with modern ML frameworks. I thrive in collaborative environments, bringing strong adaptability, fast decision-making skills, and collaborative teamwork to every project.
+                        </p>
+                        
+                        <div class="interests-grid">
+                            <h4 class="interests-title">Interests & Hobbies</h4>
+                            <div class="interests-tags">
+                                <span class="interest-tag"><i data-lucide="book-open"></i> Reading</span>
+                                <span class="interest-tag"><i data-lucide="gamepad-2"></i> Gaming</span>
+                                <span class="interest-tag"><i data-lucide="sprout"></i> Farming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Creative Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" id="project-gesture">
+                        <div class="project-img-wrapper">
+                            <img src="assets/gesture_project.png" alt="Hand Gesture Recognition System preview" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header-meta">
+                                <span class="project-date">Jan 2025 – Mar 2025</span>
+                            </div>
+                            <h3 class="project-title">Hand Gesture Recognition System</h3>
+                            <p class="project-description">
+                                A real-time system that detects, tracks, and classifies hand gestures to enable seamless human-computer interaction.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Uses <strong>TensorFlow</strong> and <strong>OpenCV</strong> alongside <strong>MediaPipe</strong> for high-fidelity, real-time hand skeleton landmark tracking.</li>
+                                <li>Integrates custom gesture-based controls mapping hand motions directly to desktop inputs and gaming actions.</li>
+                                <li>Collaborated in a team of two to design, benchmark model performance, and deploy the application.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>MediaPipe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" id="project-weather">
+                        <div class="project-img-wrapper">
+                            <img src="assets/weather_project.png" alt="Weather Forecasting Application preview" class="project-img">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-header-meta">
+                                <span class="project-date">2024</span>
+                            </div>
+                            <h3 class="project-title">Weather Forecasting Application</h3>
+                            <p class="project-description">
+                                A modern weather forecasting application providing real-time conditions, forecasts, and interactive weather parameters.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Integrates <strong>OpenWeatherMap API</strong> to retrieve accurate temperature, humidity, wind velocity, and condition data.</li>
+                                <li>Features location-based search, responsive visuals, and detailed summaries of atmospheric dynamics.</li>
+                                <li>Designed with an intuitive user interface ensuring smooth navigation and fast data loading states.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>API</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Academic Roadmap</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2023 - 2027</span>
+                                <h3 class="timeline-degree">Bachelor's Degree in Computer Science & Engineering</h3>
+                            </div>
+                            <h4 class="timeline-institution">Madanapalle Institute of Technology and Science</h4>
+                            <p class="timeline-grade">
+                                <strong>CGPA: 8.18 / 10</strong>
+                            </p>
+                            <p class="timeline-details">
+                                Currently pursuing B.Tech in CSE. Focusing on algorithms, data structures, database management systems, and practical machine learning applications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2023</span>
+                                <h3 class="timeline-degree">Intermediate Education</h3>
+                            </div>
+                            <h4 class="timeline-institution">SR Junior College</h4>
+                            <p class="timeline-grade">
+                                <strong>Percentage: 97.1%</strong>
+                            </p>
+                            <p class="timeline-details">
+                                Major coursework in Mathematics, Physics, and Chemistry. Developed strong logical reasoning and quantitative analysis skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-date">2021</span>
+                                <h3 class="timeline-degree">SSC (Secondary School Certificate)</h3>
+                            </div>
+                            <h4 class="timeline-institution">Keshava Reddy EM Concept School</h4>
+                            <p class="timeline-grade">
+                                <strong>Percentage: 99.5%</strong>
+                            </p>
+                            <p class="timeline-details">
+                                Completed secondary education with honors. Actively participated in regional science seminars and logical reasoning competitions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Excel In</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h3>Languages & Databases</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">Advanced</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java (Basics)</span>
+                                    <span class="skill-percentage">Basic</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-percentage">Intermediate</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="cpu"></i>
+                            </div>
+                            <h3>Tools & Frameworks</h3>
+                        </div>
+                        <div class="skills-chips">
+                            <span class="skill-chip"><i data-lucide="terminal"></i> TensorFlow</span>
+                            <span class="skill-chip"><i data-lucide="eye"></i> OpenCV</span>
+                            <span class="skill-chip"><i data-lucide="git-branch"></i> Git</span>
+                            <span class="skill-chip"><i data-lucide="layout"></i> VS Code</span>
+                            <span class="skill-chip"><i data-lucide="box"></i> MediaPipe</span>
+                        </div>
+                        
+                        <div class="languages-subcard">
+                            <h4 class="subcard-title"><i data-lucide="languages"></i> Languages</h4>
+                            <div class="skills-chips">
+                                <span class="skill-chip language">English (Fluent)</span>
+                                <span class="skill-chip language">Telugu (Native)</span>
+                                <span class="skill-chip language">Hindi (Conversational)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon-wrapper">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3>Soft Skills & Strengths</h3>
+                        </div>
+                        <ul class="soft-skills-list">
+                            <li>
+                                <div class="soft-icon"><i data-lucide="brain"></i></div>
+                                <div class="soft-text">
+                                    <h4>Problem Solving</h4>
+                                    <p>Methodical approach to parsing complex bugs and optimization limits.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="soft-icon"><i data-lucide="users"></i></div>
+                                <div class="soft-text">
+                                    <h4>Teamwork & Collaboration</h4>
+                                    <p>Experience working in dual-developer project formats and groups.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="soft-icon"><i data-lucide="shuffle"></i></div>
+                                <div class="soft-text">
+                                    <h4>Adaptability</h4>
+                                    <p>Fast assimilation of new software libraries, APIs, and frameworks.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Milestones Achieved</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="achievements-grid">
+                    <!-- Achievement Card 1 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="medal"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h3>Academic Excellence</h3>
+                            <p>Secured an outstanding 99% in SSC (Secondary School Certificate) and 97% in Intermediate board examinations, demonstrating consistent focus and discipline.</p>
+                        </div>
+                    </div>
+
+                    <!-- Achievement Card 2 -->
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i data-lucide="scroll"></i>
+                        </div>
+                        <div class="achievement-info">
+                            <h3>NPTEL Certification</h3>
+                            <p>Achieved a high score of <strong>92%</strong> in the NPTEL Certification course on "Understanding Incubation and Entrepreneurship".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-sidebar">
+                        <div class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Email Me</span>
+                                <a href="mailto:jyothisgjyothiswarreddy@gmail.com">jyothisgjyothiswarreddy@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Call Me</span>
+                                <a href="tel:+919000031870">+91 9000031870</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-card">
+                            <div class="contact-icon-box">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span>Location</span>
+                                <p>Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Inquiry / Job Opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-message">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Gorla Jyothiswar Reddy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+                <i data-lucide="chevron-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
