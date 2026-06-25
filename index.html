@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Gorla Jyothiswar Reddy - B.Tech CSE student specializing in Python, Machine Learning, and Computer Vision. View projects, skills, and academic achievements.">
-    <meta name="keywords" content="Gorla Jyothiswar Reddy, Portfolio, Machine Learning, Computer Vision, Python Developer, B.Tech CSE, Madanapalle Institute of Technology and Science">
+    <meta name="description"
+        content="Portfolio of Gorla Jyothiswar Reddy - B.Tech CSE student specializing in Python, Machine Learning, and Computer Vision. View projects, skills, and academic achievements.">
+    <meta name="keywords"
+        content="Gorla Jyothiswar Reddy, Portfolio, Machine Learning, Computer Vision, Python Developer, B.Tech CSE, Madanapalle Institute of Technology and Science">
     <meta name="author" content="Gorla Jyothiswar Reddy">
     <title>Gorla Jyothiswar Reddy | Portfolio</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Portal Transition Stylesheet -->
+    <link rel="stylesheet" href="entrance_portal.css">
 </head>
+
 <body>
+    <!-- Entrance Portal Overlay -->
+    <div id="entrance-portal">
+        <canvas id="entrance-portal-canvas"></canvas>
+        <div class="portal-flash"></div>
+        <div class="portal-hud">SINGULARITY DETECTED - WARPING</div>
+    </div>
+
+    <!-- Space background canvas -->
+    <canvas id="space-bg"></canvas>
     <!-- Navigation Bar -->
     <header class="navbar" id="main-header">
         <div class="nav-container">
@@ -46,11 +63,7 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="hero-bg-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+            <div class="hero-cosmic-glow"></div>
             <div class="container hero-container">
                 <div class="hero-content">
                     <span class="hero-subtitle">Welcome to my portfolio</span>
@@ -59,7 +72,9 @@
                     </h1>
                     <p class="hero-tagline">B.Tech Computer Science & Engineering Student</p>
                     <p class="hero-description">
-                        Passionate developer with hands-on experience building solutions in <strong>Machine Learning</strong>, <strong>Computer Vision</strong>, and <strong>Python</strong>. Eager to solve real-world challenges through technology.
+                        Passionate developer with hands-on experience building solutions in <strong>Machine
+                            Learning</strong>, <strong>Computer Vision</strong>, and <strong>Python</strong>. Eager to
+                        solve real-world challenges through technology.
                     </p>
                     <div class="hero-ctas">
                         <a href="#projects" class="btn btn-primary" id="hero-btn-work">
@@ -71,13 +86,17 @@
                         </a>
                     </div>
                     <div class="hero-socials">
-                        <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-github" aria-label="GitHub">
+                        <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" id="hero-social-github" aria-label="GitHub">
                             <i data-lucide="github"></i>
                         </a>
-                        <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-linkedin" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" id="hero-social-linkedin"
+                            aria-label="LinkedIn">
                             <i data-lucide="linkedin"></i>
                         </a>
-                        <a href="mailto:jyothisgjyothiswarreddy@gmail.com" class="social-icon" id="hero-social-email" aria-label="Email">
+                        <a href="mailto:jyothisgjyothiswarreddy@gmail.com" class="social-icon" id="hero-social-email"
+                            aria-label="Email">
                             <i data-lucide="mail"></i>
                         </a>
                         <a href="tel:+919000031870" class="social-icon" id="hero-social-phone" aria-label="Phone">
@@ -86,6 +105,15 @@
                     </div>
                 </div>
                 <div class="hero-visual">
+                    <div class="black-hole-wrapper">
+                        <canvas id="black-hole-canvas"></canvas>
+                        <div class="black-hole-hud">
+                            <div class="hud-item"><span class="hud-label">SINGULARITY:</span> <span class="hud-val glow-amber">GARGANTUA</span></div>
+                            <div class="hud-item"><span class="hud-label">MASS:</span> <span class="hud-val">100M M☉</span></div>
+                            <div class="hud-item"><span class="hud-label">GRAVITY_WARP:</span> <span class="hud-val text-cyan">ACTIVE</span></div>
+                        </div>
+                    </div>
+                    
                     <div class="visual-card">
                         <div class="card-header">
                             <span class="dot red"></span>
@@ -143,12 +171,17 @@ print(jyothiswar.get_status())</code></pre>
                     <div class="about-text-content">
                         <h3 class="about-heading">Blending Coding with Cognitive Systems</h3>
                         <p class="about-p">
-                            I am a motivated B.Tech Computer Science & Engineering student with a deep interest in artificial intelligence, machine learning, and computer vision. I am skilled in developing innovative projects and eager to apply my technical and analytical knowledge to solve real-world problems.
+                            I am a motivated B.Tech Computer Science & Engineering student with a deep interest in
+                            artificial intelligence, machine learning, and computer vision. I am skilled in developing
+                            innovative projects and eager to apply my technical and analytical knowledge to solve
+                            real-world problems.
                         </p>
                         <p class="about-p">
-                            My approach combines solid software engineering fundamentals with modern ML frameworks. I thrive in collaborative environments, bringing strong adaptability, fast decision-making skills, and collaborative teamwork to every project.
+                            My approach combines solid software engineering fundamentals with modern ML frameworks. I
+                            thrive in collaborative environments, bringing strong adaptability, fast decision-making
+                            skills, and collaborative teamwork to every project.
                         </p>
-                        
+
                         <div class="interests-grid">
                             <h4 class="interests-title">Interests & Hobbies</h4>
                             <div class="interests-tags">
@@ -174,9 +207,11 @@ print(jyothiswar.get_status())</code></pre>
                     <!-- Project 1 -->
                     <div class="project-card" id="project-gesture">
                         <div class="project-img-wrapper">
-                            <img src="assets/gesture_project.png" alt="Hand Gesture Recognition System preview" class="project-img">
+                            <img src="assets/gesture_project.png" alt="Hand Gesture Recognition System preview"
+                                class="project-img">
                             <div class="project-overlay">
-                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
+                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank"
+                                    rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
                                     <i data-lucide="github"></i>
                                 </a>
                             </div>
@@ -187,12 +222,18 @@ print(jyothiswar.get_status())</code></pre>
                             </div>
                             <h3 class="project-title">Hand Gesture Recognition System</h3>
                             <p class="project-description">
-                                A real-time system that detects, tracks, and classifies hand gestures to enable seamless human-computer interaction.
+                                A real-time system that detects, tracks, and classifies hand gestures to enable seamless
+                                human-computer interaction.
                             </p>
                             <ul class="project-bullets">
-                                <li>Uses <strong>TensorFlow</strong> and <strong>OpenCV</strong> alongside <strong>MediaPipe</strong> for high-fidelity, real-time hand skeleton landmark tracking.</li>
-                                <li>Integrates custom gesture-based controls mapping hand motions directly to desktop inputs and gaming actions.</li>
-                                <li>Collaborated in a team of two to design, benchmark model performance, and deploy the application.</li>
+                                <li>Uses <strong>TensorFlow</strong> and <strong>OpenCV</strong> alongside
+                                    <strong>MediaPipe</strong> for high-fidelity, real-time hand skeleton landmark
+                                    tracking.
+                                </li>
+                                <li>Integrates custom gesture-based controls mapping hand motions directly to desktop
+                                    inputs and gaming actions.</li>
+                                <li>Collaborated in a team of two to design, benchmark model performance, and deploy the
+                                    application.</li>
                             </ul>
                             <div class="project-tags">
                                 <span>Python</span>
@@ -206,9 +247,11 @@ print(jyothiswar.get_status())</code></pre>
                     <!-- Project 2 -->
                     <div class="project-card" id="project-weather">
                         <div class="project-img-wrapper">
-                            <img src="assets/weather_project.png" alt="Weather Forecasting Application preview" class="project-img">
+                            <img src="assets/weather_project.png" alt="Weather Forecasting Application preview"
+                                class="project-img">
                             <div class="project-overlay">
-                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
+                                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank"
+                                    rel="noopener noreferrer" class="btn-project-icon" aria-label="View Source Code">
                                     <i data-lucide="github"></i>
                                 </a>
                             </div>
@@ -219,12 +262,16 @@ print(jyothiswar.get_status())</code></pre>
                             </div>
                             <h3 class="project-title">Weather Forecasting Application</h3>
                             <p class="project-description">
-                                A modern weather forecasting application providing real-time conditions, forecasts, and interactive weather parameters.
+                                A modern weather forecasting application providing real-time conditions, forecasts, and
+                                interactive weather parameters.
                             </p>
                             <ul class="project-bullets">
-                                <li>Integrates <strong>OpenWeatherMap API</strong> to retrieve accurate temperature, humidity, wind velocity, and condition data.</li>
-                                <li>Features location-based search, responsive visuals, and detailed summaries of atmospheric dynamics.</li>
-                                <li>Designed with an intuitive user interface ensuring smooth navigation and fast data loading states.</li>
+                                <li>Integrates <strong>OpenWeatherMap API</strong> to retrieve accurate temperature,
+                                    humidity, wind velocity, and condition data.</li>
+                                <li>Features location-based search, responsive visuals, and detailed summaries of
+                                    atmospheric dynamics.</li>
+                                <li>Designed with an intuitive user interface ensuring smooth navigation and fast data
+                                    loading states.</li>
                             </ul>
                             <div class="project-tags">
                                 <span>Python</span>
@@ -262,7 +309,8 @@ print(jyothiswar.get_status())</code></pre>
                                 <strong>CGPA: 8.18 / 10</strong>
                             </p>
                             <p class="timeline-details">
-                                Currently pursuing B.Tech in CSE. Focusing on algorithms, data structures, database management systems, and practical machine learning applications.
+                                Currently pursuing B.Tech in CSE. Focusing on algorithms, data structures, database
+                                management systems, and practical machine learning applications.
                             </p>
                         </div>
                     </div>
@@ -282,7 +330,8 @@ print(jyothiswar.get_status())</code></pre>
                                 <strong>Percentage: 97.1%</strong>
                             </p>
                             <p class="timeline-details">
-                                Major coursework in Mathematics, Physics, and Chemistry. Developed strong logical reasoning and quantitative analysis skills.
+                                Major coursework in Mathematics, Physics, and Chemistry. Developed strong logical
+                                reasoning and quantitative analysis skills.
                             </p>
                         </div>
                     </div>
@@ -302,7 +351,8 @@ print(jyothiswar.get_status())</code></pre>
                                 <strong>Percentage: 99.5%</strong>
                             </p>
                             <p class="timeline-details">
-                                Completed secondary education with honors. Actively participated in regional science seminars and logical reasoning competitions.
+                                Completed secondary education with honors. Actively participated in regional science
+                                seminars and logical reasoning competitions.
                             </p>
                         </div>
                     </div>
@@ -318,7 +368,7 @@ print(jyothiswar.get_status())</code></pre>
                     <h2 class="section-title">My Skills</h2>
                     <div class="title-underline"></div>
                 </div>
-                
+
                 <div class="skills-grid">
                     <!-- Category 1 -->
                     <div class="skill-category-card">
@@ -383,7 +433,7 @@ print(jyothiswar.get_status())</code></pre>
                             <span class="skill-chip"><i data-lucide="layout"></i> VS Code</span>
                             <span class="skill-chip"><i data-lucide="box"></i> MediaPipe</span>
                         </div>
-                        
+
                         <div class="languages-subcard">
                             <h4 class="subcard-title"><i data-lucide="languages"></i> Languages</h4>
                             <div class="skills-chips">
@@ -446,7 +496,8 @@ print(jyothiswar.get_status())</code></pre>
                         </div>
                         <div class="achievement-info">
                             <h3>Academic Excellence</h3>
-                            <p>Secured an outstanding 99% in SSC (Secondary School Certificate) and 97% in Intermediate board examinations, demonstrating consistent focus and discipline.</p>
+                            <p>Secured an outstanding 99% in SSC (Secondary School Certificate) and 97% in Intermediate
+                                board examinations, demonstrating consistent focus and discipline.</p>
                         </div>
                     </div>
 
@@ -457,7 +508,8 @@ print(jyothiswar.get_status())</code></pre>
                         </div>
                         <div class="achievement-info">
                             <h3>NPTEL Certification</h3>
-                            <p>Achieved a high score of <strong>92%</strong> in the NPTEL Certification course on "Understanding Incubation and Entrepreneurship".</p>
+                            <p>Achieved a high score of <strong>92%</strong> in the NPTEL Certification course on
+                                "Understanding Incubation and Entrepreneurship".</p>
                         </div>
                     </div>
                 </div>
@@ -521,11 +573,13 @@ print(jyothiswar.get_status())</code></pre>
                             </div>
                             <div class="form-group">
                                 <label for="form-subject">Subject</label>
-                                <input type="text" id="form-subject" placeholder="Project Inquiry / Job Opportunity" required>
+                                <input type="text" id="form-subject" placeholder="Project Inquiry / Job Opportunity"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <label for="form-message">Message</label>
-                                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-message">
                                 <span>Send Message</span>
@@ -547,8 +601,10 @@ print(jyothiswar.get_status())</code></pre>
                 <a href="#hero">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/jyothisgjyothiswarreddy" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jyothisgjyothiswarreddy" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
             </div>
             <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
                 <i data-lucide="chevron-up"></i>
@@ -556,7 +612,11 @@ print(jyothiswar.get_status())</code></pre>
         </div>
     </footer>
 
+    <!-- Portal Transition JavaScript -->
+    <script src="portal_transition.js"></script>
+
     <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>
